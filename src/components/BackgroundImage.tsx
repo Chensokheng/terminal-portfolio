@@ -9,7 +9,7 @@ export default function BackgroundImage() {
 				alt="wallpaper"
 				className="h-full w-full object-cover object-center"
 				effect="blur"
-				wrapperClassName="wrapper w-full h-full p-0 m-0 object-cover object-center bg-black bg-opacity-50"
+				wrapperClassName="wrapper w-full h-full p-0 m-0 object-cover object-center bg-black bg-opacity-70"
 			/>
 		</div>
 	);
