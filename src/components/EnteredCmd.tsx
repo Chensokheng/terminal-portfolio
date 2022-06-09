@@ -7,10 +7,10 @@ interface EnteredCmdProps {
 export default function EnteredCmd({ enteredCmd }: EnteredCmdProps) {
 	return (
 		<div>
-			{enteredCmd.map(({ cmd, Component }, index) => {
+			{enteredCmd.map(({ cmd, Component, time }, index) => {
 				return (
 					<div key={index}>
-						<ReadOnlyCmdInput cmd={cmd} />
+						<ReadOnlyCmdInput cmd={cmd} time={time} />
 						<div className="mt-3 mb-3">
 							<Component />
 						</div>

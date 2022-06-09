@@ -12,10 +12,12 @@ export default function TerminalBox() {
 		{
 			cmd: "",
 			Component: Welcome,
+			time: new Date().toLocaleTimeString(),
 		},
 		{
 			cmd: "ls",
 			Component: Help,
+			time: new Date().toLocaleTimeString(),
 		},
 	]);
 	const dummyRef = useRef() as React.MutableRefObject<HTMLDivElement>;
@@ -26,7 +28,10 @@ export default function TerminalBox() {
 		document.body.addEventListener("keydown", handleKeyEvent);
 	}, []);
 	const handleSubmit = (cmd: string) => {
-		setEnteredCmd((currentCmd) => [...currentCmd, renderCmd(cmd)]);
+		setEnteredCmd((currentCmd) => [
+			...currentCmd,
+			{ ...renderCmd(cmd), time: new Date().toLocaleTimeString() },
+		]);
 	};
 
 	const handleKeyEvent = (e: KeyboardEvent) => {

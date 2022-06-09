@@ -12,32 +12,38 @@ function renderCmd(cmd: string): CmdHistory {
 			return {
 				cmd,
 				Component: Help,
+				time: "",
 			};
 		case "bio":
 			return {
 				cmd,
 				Component: Bio,
+				time: "",
 			};
 		case "skill":
 			return {
 				cmd,
 				Component: Skills,
+				time: "",
 			};
 		case "contact":
 			return {
 				cmd,
 				Component: Contact,
+				time: "",
 			};
 		case "about": {
 			return {
 				cmd,
 				Component: About,
+				time: "",
 			};
 		}
 		default:
 			return {
 				cmd,
 				Component: NotFound,
+				time: "",
 			};
 	}
 }
