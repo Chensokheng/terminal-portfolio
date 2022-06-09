@@ -8,7 +8,7 @@ import { CmdHistory } from "../type";
 
 function renderCmd(cmd: string): CmdHistory {
 	switch (cmd) {
-		case "help":
+		case "ls":
 			return {
 				cmd,
 				Component: Help,
