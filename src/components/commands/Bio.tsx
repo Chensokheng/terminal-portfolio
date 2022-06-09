@@ -13,7 +13,7 @@ export default function Bio() {
 			title: "Youtube",
 			Icon: SiYoutube,
 			href: "https://www.youtube.com/c/DailyWebCoding",
-			text: "@Youtube",
+			text: "@Dailywebcoding",
 		},
 		{
 			title: "Patreon",
@@ -43,11 +43,11 @@ export default function Bio() {
 				development and like to learn new thing related to coding and sharing it
 				to the internet through my youtube.
 			</p>
-			<div>
+			<div className="grid grid-cols-2">
 				{links.map(({ Icon, text, href, title }, index) => {
 					return (
-						<div className="flex items-center gap-20  mt-3" key={index}>
-							<div className="flex items-center gap-1 w-32 text-yellow-200">
+						<div className="flex items-center gap-1 mt-3" key={index}>
+							<div className="text-lg flex items-center gap-1 text-yellow-200">
 								<Icon />
 								<h1>{title}</h1>
 							</div>

@@ -8,8 +8,9 @@ export default function Help() {
 	const listOfHelpCommands: HelpCmd[] = [
 		{ cmd: "bio", detail: "Show my bio information." },
 		{ cmd: "skill", detail: "List all of my skills." },
-		{ cmd: "ctrl + l", detail: "To clear the history." },
 		{ cmd: "contact", detail: "List all of the contacts." },
+		{ cmd: "about", detail: "To see what is terminal portfolio." },
+		{ cmd: "ctrl + l", detail: "To clear the history." },
 	];
 	return (
 		<div className="w-11/12 mx-auto">

@@ -1,3 +1,4 @@
+import About from "../components/commands/About";
 import Bio from "../components/commands/Bio";
 import Contact from "../components/commands/Contact";
 import Help from "../components/commands/Help";
@@ -27,6 +28,12 @@ function renderCmd(cmd: string): CmdHistory {
 				cmd,
 				Component: Contact,
 			};
+		case "about": {
+			return {
+				cmd,
+				Component: About,
+			};
+		}
 		default:
 			return {
 				cmd,

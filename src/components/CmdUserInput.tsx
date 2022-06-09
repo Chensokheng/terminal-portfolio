@@ -74,7 +74,7 @@ export default function CmdUserInput({ onSubmit }: CmdUserInputProp) {
 							setShowFakeCursor(false);
 						}}
 						ref={inputRef}
-						placeholder="try help , bio , skill , contact..."
+						placeholder="try help , bio , skill , contact, about..."
 					/>
 				</form>
 			}

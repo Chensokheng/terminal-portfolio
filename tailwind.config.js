@@ -105,6 +105,10 @@ module.exports = {
 			"80%": "80%",
 			"85%": "85%",
 			"90%": "90%",
+			"45vh": "45vh",
+			"50vh": "50vh",
+			"55vh": "55vh",
+			"60vh": "60vh",
 		},
 		animation: {
 			none: "none",
@@ -113,6 +117,8 @@ module.exports = {
 			pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
 			bounce: "bounce 1s infinite",
 			blink: "blink 1s step-start 0s infinite",
+			"reveal-0.5": "reveal 0.5s",
+			"reveal-0.7": "reveal 0.7s",
 		},
 		aspectRatio: {
 			auto: "auto",
@@ -389,6 +395,8 @@ module.exports = {
 				'"Courier New"',
 				"monospace",
 			],
+			josefin: ["Josefin Sans", "sans-serif"],
+			fascinate: ["Fascinate Inline", "cursive"],
 		},
 		fontSize: {
 			xs: ["0.75rem", { lineHeight: "1rem" }],
@@ -596,6 +604,18 @@ module.exports = {
 				},
 				"50%": {
 					transform: "none",
+					animationTimingFunction: "cubic-bezier(0,0,0.2,1)",
+				},
+			},
+			reveal: {
+				"0%": {
+					transform: "translateY(10%)",
+					animationTimingFunction: "cubic-bezier(0.8,0,1,1)",
+					opacity: "0",
+				},
+				"1050%": {
+					transform: "none",
+					opacity: "1",
 					animationTimingFunction: "cubic-bezier(0,0,0.2,1)",
 				},
 			},
